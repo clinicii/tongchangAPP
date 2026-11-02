@@ -14,7 +14,11 @@ $markers=@(
   'function coverFor',
   'background-image:url',
   '.detailhero',
-  '.thumb'
+  '.thumb',
+  'match-screen',
+  'matching-screen',
+  'matching-progress',
+  '.profile .avatar'
 )
 foreach($marker in $markers){
   if($html.IndexOf($marker) -lt 0){throw "FAIL: visual marker missing: $marker"}
